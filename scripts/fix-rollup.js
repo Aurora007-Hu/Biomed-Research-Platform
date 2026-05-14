@@ -1,6 +1,6 @@
 // Fix for Cloudflare Pages: install missing Linux rollup binding
-const { execSync } = require('child_process');
-const os = require('os');
+import { execSync } from 'child_process';
+import os from 'os';
 
 if (os.platform() === 'linux') {
   try {
