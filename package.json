@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npx vite build",
     "preview": "vite preview",
-    "postinstall": "node scripts/fix-rollup.js || true"
+    "postinstall": "node scripts/fix-rollup.js || true && chmod -R 755 node_modules/.bin || true"
   },
   "optionalDependencies": {
     "@rollup/rollup-linux-x64-gnu": "^4.60.0"
